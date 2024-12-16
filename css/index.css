@@ -1,0 +1,47 @@
+/* section{
+    background-color: #494949;
+} */
+.carousel-inner{
+    object-fit: cover;
+}
+.main-pkg .card{
+    transition: 0.2s ease-in-out;
+    border-radius: 20px;
+    border: none;
+}
+.main-pkg .card .Header-Outline{
+    display: block;
+    width: 5em;
+    height: 2px;
+    background-image: linear-gradient(35deg,#003366, #004ff9,#003366);
+    transition: 0.2s ease-in-out;
+}
+.main-pkg .card .btn{
+    border-radius: 20px ;
+    padding: 5px 20px;
+    /* background-image: linear-gradient(35deg,#003366, #004ff9,#003366); */
+}
+.main-pkg ul li{
+   padding-left: 10px;
+}
+.main-pkg ul li::marker{
+    content: '\f058';
+    font-family: FontAwesome;
+    font-size: 0.8em;
+    color: var(--secColor);
+}
+.main-pkg .card-Hover:hover{
+    box-shadow: 0 5px 10px var( --mmlinkcolor);
+    .Header-Outline{
+        width: 6em;
+    }
+}
+@media (min-width: 1500px) {
+    .carousel-inner{
+        height: 40rem;
+    }
+    .carousel-item img {
+        position: relative;
+        top: -25vh;
+    }
+}
